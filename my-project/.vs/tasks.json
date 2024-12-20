@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Server",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "c:\\Users\\BEYZA\\Desktop\\my-project\\CclientServer\\Server.c",
+                "-o",
+                "c:\\Users\\BEYZA\\Desktop\\my-project\\CclientServer\\output\\Server.exe",
+                "-lws2_32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiles the C server application"
+        }
+    ]
+}
